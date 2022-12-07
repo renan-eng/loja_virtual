@@ -7,28 +7,28 @@ const data = {
     produtos: [
         {
             id: 1,
-            titulo: "Vivamus velit",
+            titulo: "Camiseta Manga Sopro ",
             img: primeira_img,
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
             price: 80,
         },
         {
             id: 2,
-            titulo: " Vivamus velit",
+            titulo: " Vestido Boho",
             img: segunda_img,
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
             price: 50,
         },
         {
             id: 3,
-            titulo: "Vivamus velit",
+            titulo: "Macacão com Bolso",
             img: terceira_img,
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
             price: 30,
         },
         {
             id: 4,
-            titulo: "Vivamus velit",
+            titulo: "Pijama Tropical",
             img: quarta_img,
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
             price: 100,
