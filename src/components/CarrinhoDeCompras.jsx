@@ -17,18 +17,39 @@ const Carrinho = () => {
         <div className='container-fluid py-5'>
             <div className="row justify-content-center">
                 <h4 className="text-center py-3 text-decoration-underline fw-bolder">Meu Carrinho</h4>
-                <div className="col-12">
-                    <div className="d-flex">
-                        <h4 className='position-relative fw-bolder text-title fs-5'>Carrinho
-                            <span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalUniqueItems}</span>
-                        </h4>
-                        <p className='fw-bolder text-title fs-5'>Total
-                            <span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalItems}</span>
-                        </p>
+                <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 py-4">
+                    <div className="d-flex justify-content-center py-4">
+                        <p className='position-relative fw-bolder text-title mx-5'>Carrinho<span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalUniqueItems}</span></p>
+                        <p className='fw-bolder text-title'>Total <span className='position-absolute translate-middle rounded-pill badge bg-success mx-2'>{totalItems}</span></p>
+                    </div>
+                    <div className=''>
+                        <table className="table table-ligth table-hover m-0">
+                            <tbody>
+                                {items.map((item, index) => {
+                                    return (
+                                        <tr key={index} className='align-middle'>
+                                            <td><img src={item.img} className="img-cart" alt={item.titulo} /></td>
+                                            <td>{item.titulo}</td>
+                                            <td>R$ {item.price}</td>
+                                            <td>Quantidade: {item.quantity}</td>
+                                            <td>
+                                                <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)} className='btn btn-outline-dark ms-1'>-</button>
+                                                <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)} className='btn btn-outline-dark ms-1'>+</button>
+                                                <button onClick={() => removeItem(item.id)} className='btn btn-outline-danger ms-5'>Remover Item</button>
+                                            </td>
+                                        </tr>
+                                    )
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className='d-flex justify-content-between py-5'>
+                        <button className="btn btn-outline-danger" onClick={(item) => emptyCart(item.id)}>Remover Todos</button>
+                        <h3>Preço Total: R$ {cartTotal}</h3>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
