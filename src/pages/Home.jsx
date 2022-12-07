@@ -9,11 +9,16 @@ const Home = () => {
             <h3 className='text-center mt-5 text-uppercase'>Loja Virtual</h3>
             <div className="container py-4">
                 <div className="row">
-                    <Cards img="" title="title" desc="desc" />
+                    {data.produtos.map((item, index) => {
+                        return (
+                            <Cards img={item.img} title={item.titulo} desc={item.desc} preco={item.preco} item={item} key={index} />
+                        )
+                    })}
+
                 </div>
             </div>
         </div>
     )
 }
 
-export default Home
+export default Home 
