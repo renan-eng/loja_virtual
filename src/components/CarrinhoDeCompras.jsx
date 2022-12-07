@@ -19,8 +19,8 @@ const Carrinho = () => {
                 <h4 className="text-center py-3 text-decoration-underline fw-bolder">Meu Carrinho</h4>
                 <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 py-4">
                     <div className="d-flex justify-content-center py-4">
-                        <p className='position-relative fw-bolder text-title mx-5'>Carrinho<span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalUniqueItems}</span></p>
-                        <p className='fw-bolder text-title'>Total <span className='position-absolute translate-middle rounded-pill badge bg-success mx-2'>{totalItems}</span></p>
+                        <p className='position-relative fw-bolder text-title mx-4'>Carrinho<span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalUniqueItems}</span></p>
+                        <p className='fw-bolder text-title mx-4'>Total <span className='position-absolute translate-middle rounded-pill badge bg-success mx-2'>{totalItems}</span></p>
                     </div>
                     <div className=''>
                         <table className="table table-ligth table-hover m-0">
