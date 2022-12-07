@@ -15,7 +15,7 @@ const Carrinho = () => {
     if (isEmpty) return <h5 className='text-center py-5'>Carrinho está vazio</h5>
     return (
         <div className='container-fluid py-5'>
-            <div className="row">
+            <div className="row justify-content-center">
                 <h4 className="text-center py-3 text-decoration-underline fw-bolder">Meu Carrinho</h4>
                 <div className="col-12">
                     <div className="d-flex">
