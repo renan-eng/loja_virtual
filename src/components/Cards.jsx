@@ -12,7 +12,7 @@ const Cards = (props) => {
                     <div className="card-body">
                         <div className="d-flex justify-content-between">
                             <h5 className="card-title fw-bold">{props.title}</h5>
-                            <span className="fw-bolder">R$ {props.preco}</span>
+                            <span className="fw-bolder">R$ {props.price}</span>
                         </div>
                         <div className="">
                             <p className="card-text">{props.desc}</p>
