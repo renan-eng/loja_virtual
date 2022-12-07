@@ -1,6 +1,8 @@
 import './Cards.css'
+import { useCart } from 'react-use-cart'
 
 const Cards = (props) => {
+    const { addItem } = useCart();
     return (
         <>
             {/* Primeiro Item Lista de Produtos */}
@@ -8,9 +10,16 @@ const Cards = (props) => {
                 <div className="card h-100 shadow rounded">
                     <img src={props.img} alt="" className="card-img-top img-fluid" />
                     <div className="card-body">
-                        <h5 className="card-title">{props.title}</h5>
-                        <p className="card-text">{props.desc}</p>
-                        <button className='btn btn-success'>Colocar no Carrinho</button>
+                        <div className="d-flex justify-content-between">
+                            <h5 className="card-title fw-bold">{props.title}</h5>
+                            <span className="fw-bolder">R$ {props.preco}</span>
+                        </div>
+                        <div className="">
+                            <p className="card-text">{props.desc}</p>
+                        </div>
+                        <div className="d-grid justify-content-end mt-4">
+                            <button className='btn btn-sm btn-outline-success' onClick={() => addItem(props.item)}>Colocar no Carrinho</button>
+                        </div>
                     </div>
                 </div>
             </div>
