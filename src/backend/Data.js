@@ -7,31 +7,31 @@ const data = {
     produtos: [
         {
             id: 1,
-            titulo: "Produto Um",
+            titulo: "Vivamus velit",
             img: primeira_img,
-            desc: "",
-            preco: 80,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
+            price: 80,
         },
         {
             id: 2,
-            titulo: "Produto Dois",
+            titulo: " Vivamus velit",
             img: segunda_img,
-            desc: "",
-            preco: 50,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
+            price: 50,
         },
         {
             id: 3,
-            titulo: "Produto Tres",
+            titulo: "Vivamus velit",
             img: terceira_img,
-            desc: "",
-            preco: 30,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
+            price: 30,
         },
         {
             id: 4,
-            titulo: "Produto Quatro",
+            titulo: "Vivamus velit",
             img: quarta_img,
-            desc: "",
-            preco: 100,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit massa, elementum ac mi at, pharetra semper ex. Donec sit. ",
+            price: 100,
         },
     ]
 }
