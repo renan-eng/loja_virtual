@@ -22,7 +22,7 @@ const Carrinho = () => {
                         <p className='position-relative fw-bolder text-title mx-4'>Carrinho<span className='position-absolute translate-middle rounded-pill badge bg-danger mx-2'>{totalUniqueItems}</span></p>
                         <p className='fw-bolder text-title mx-4'>Total <span className='position-absolute translate-middle rounded-pill badge bg-success mx-2'>{totalItems}</span></p>
                     </div>
-                    <div className=''>
+                    <div className='table-responsive'>
                         <table className="table table-ligth table-hover m-0">
                             <tbody>
                                 {items.map((item, index) => {
