@@ -43,9 +43,12 @@ const Carrinho = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className='d-flex justify-content-between py-5'>
+                    <div className='d-flex justify-content-between py-5 pb-0'>
                         <button className="btn btn-outline-danger" onClick={(item) => emptyCart(item.id)}>Remover Todos</button>
                         <h3>Preço Total: R$ {cartTotal}</h3>
+                    </div>
+                    <div className='d-flex justify-content-end'>
+                        <button className="btn btn-outline-success" onClick="#">Comprar</button>
                     </div>
                 </div>
             </div>
