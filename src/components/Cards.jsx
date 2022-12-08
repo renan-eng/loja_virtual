@@ -17,7 +17,7 @@ const Cards = (props) => {
                         <div className="">
                             <p className="card-text">{props.desc}</p>
                         </div>
-                        <div className="d-grid justify-content-end mt-4">
+                        <div className="d-grid mt-4">
                             <button className='btn btn-sm btn-outline-success' onClick={() => addItem(props.item)}>Colocar no Carrinho</button>
                         </div>
                     </div>
