@@ -14,7 +14,6 @@ const Home = () => {
                             <Cards img={item.img} title={item.titulo} desc={item.desc} price={item.price} item={item} key={index} />
                         )
                     })}
-
                 </div>
             </div>
         </div>
